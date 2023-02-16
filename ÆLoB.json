@@ -1,0 +1,3498 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ÆLoB",
+				"abbreviation": "ÆLoB",
+				"full": "ÆLoB",
+				"authors": [
+					"Ælfwine"
+				],
+				"version": "unknown"
+			}
+		]
+	},
+"feat": [
+		{
+		"name": "Ambusher",
+		"source": "ÆLoB",
+		"page": 0,
+		"prerequisite": [
+		{
+			"ability": [
+				{
+					"dex": 13
+				}
+			]
+		}
+		],
+		"entries": [
+			"You have become adept at using natural covers to ambush your enemies. Choose one type of terrain: arctic, coast, desert, forest, grassland, mountain or cavern. You are now capable of assailing unsuspecting enemies in such terrain, if you are hidden in a such an area (that is you are at least half-covered by a natural feature encountered in such areas, which don't stand out in the environment, which currently surrounds you):",
+			{
+				"type": "list",
+				"items": [
+					"If a ranged strike, made by you, directed at an enemy, who is not aware of your current location hits, they fall {@condition prone} and become {@condition stunned} for {@dice 1d4} + 1 turns due to shock (the roll for this is secret, although a DC 15 Wisdom ({@skill Medicine}) check reveals the number of turns left). Your position isn't evident to the target once it comes to its senses. Once awakened the target is immune to this effect for the next 8 hours.",
+					"If you miss you aren't automatically detected and all creatures which would be usually alerted reroll their Wisdom ({@skill Perception}) checks against the roll you made while hiding (they use their actions to do this). If they succeed they learn of your true location. If they fail they know that some threat is present nearby."
+				]
+			}
+			]
+		},
+		{
+		"name": "Windan Rituals",
+		"source": "ÆLoB",
+		"page": 0,
+		"prerequisite": [
+		{
+			"race": [
+				{
+					"name": "elf",
+					"subrace": "avari"
+				}
+			]
+		}
+		],
+		"additionalSpells": [
+		{
+			"ability": "choose",
+			"innate": {
+				"_": {
+					"always": {
+						"1": [
+							"beast sense",
+							"detect poison and disease",
+							"locate animals or plants",
+							"speak with animals",
+							"druidcraft"
+						]
+					}
+				}
+			}
+		}
+		],
+		"entries": [
+			"You have learnt the rites of secluded hinterland woods, which are revered and protected by the mysterious Windan elves:",
+			{
+				"type": "list",
+				"items": [
+					"You learn the {@spell druidcraft} cantrip.",
+					"You also learn the {@spell speak with animals}, {@spell detect poison and disease}, {@spell locate animals or plants} and {@spell beast sense} spells, each of which you can only cast as rituals and do so for without expending any material components or spell slots."
+					]
+			}
+				]
+		},
+		{
+		"name": "Prodigy Sailor",
+		"source": "ÆLoB",
+		"page": 0,
+		"toolProficiencies": [
+		{
+			"weaver's tools": true,
+			"carpenter's tools": true,
+			"navigator's tools": true,
+			"vehicles (water)": true
+		}
+		],
+		"entries": [
+			"You gain various skills, which are usefull for sailors, such as:",
+			{
+				"type": "list",
+				"items": [
+					"You gain profficiency in {@item Weaver's tools|phb}, {@item Carpenter's tools|phb} and have advantage on all checks related to medning ship parts with the tools. If you are already profficient in any of the tools your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+					"You gain profficiency in {@filter vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}. (This means, you can add your profficiency bonus to all checks concerning such vessels.)",
+					"You gain profficiency in {@item Navigator's tools|phb}. If you are already profficient with the tools your proficiency bonus is doubled for any ability check you make that uses the proficiency.",
+					"You know how to craft rafts and dugout canoes and can do so at twice the speed inexperianced craftsmen would be able to. If a team led by you cooperates on such an activity this bonus applies to all members of the group.",
+					"You automatically succeed on all saving throws related to maintaining balance at sea.",
+					"If you were previously unable to, you are now capable of swimming well and have advantage on {@skill athletics} skill checks that concerning swimming in rough waters."
+					]
+			}
+				]
+		},
+		{
+		"name": "Misguided Smith",
+		"source": "ÆLoB",
+		"page": 0,
+		"prerequisite": [
+		{
+			"race": [
+				{
+					"name": "dwarf"
+				},
+				{
+					"name": "elf",
+					"subrace": "noldor"
+				}
+
+			],
+			"other":"or profficiency with smith's tools"
+		}
+		],
+		"ability": [
+		{
+			"choose": {
+				"from": [
+					"dex",
+					"con",
+					"int"
+				],
+				"amount": 1
+			}
+		}
+		],
+		"additionalSpells": [
+		{
+			"ability": "choose",
+			"innate": {
+				"_": {
+					"always": {
+						"1": [
+							"Heat Metal"
+						]
+					}
+				}
+			}
+		}
+		],
+		"toolProficiencies": [
+		{
+			"smith's tools": true
+		}
+		],
+		"entries": [
+			"You have learned a thing or two about smithing, thus:",
+			{
+				"type": "list",
+				"items": [
+					"You gain profficiency in {@item Smith's tools|phb}. If you are already profficient with the tools your proficiency bonus is doubled for any ability check you make that uses the proficiency.",
+					"You can roughly determine who manufactured a weapon or a piece of armor or that it is of an origin unknown to the smithing world.",
+					"You can cast the {@spell heat metal} spell once between long rests and can cast this spell without expending a spell slot. However, you can cast the spell as a ritual, and can do so without exhausting the once in between long rests casting limit (you can also cast this when the limit is reached). You can cast the spell as a ritual while smithing. Your spellcasting ability for the spell is Wisdom, Intelligence or Charisma (choose one when picking this feat)."
+					]
+			}
+				]
+		},
+		{
+		"name": "Tool Expert",
+		"source": "ÆLoB",
+		"page": 0,
+		"ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+				"amount": 1
+			}
+		}
+		],
+		"toolProficiencies": [
+		{
+			"any": 1
+		}
+		],
+		"entries": [
+			"You have honed your proficiency with particular toolsets, granting you the following benefits:",
+			{
+				"type": "list",
+				"items": [
+					"You gain proficiency in one tool of your choice.",
+					"Choose one set of tools in which you have proficiency. You gain expertise with the tools, which means your proficiency bonus is doubled for any ability check you make with it. The toolset you choose must be one that isn't already benefiting from a feature that doubles your proficiency bonus. Additionally you know how to manufacture that set of tools (even though that process may require significant amounts of time or utilising another set of tools)."
+					]
+			}
+				]
+		},
+		{
+		"name": "Resistant",
+		"source": "ÆLoB",
+		"page": 0,
+		"prerequisite": [
+		{
+			"spellcasting": true,
+			"other":"has not taken this feat previously"
+		}
+		],
+		"ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+				"amount": 1
+			}
+		}
+		],
+		"entries": [
+			"By experimenting with hazardously volatile magic, you find a way to imbue yourself with powerful undispellable and uninhibitable magic capable of fending off a particular type of threat:",
+			{
+				"type": "list",
+				"items": [
+					"Choose one type of damage: Acid, Cold, Fire, Force, Lightning, Necrotic, Poison, Psychic, Radiant or Thunder. You become resistant to the damage type.",
+					"Aditionally, when hit by an attack, which deals damage of your chosen type you learn the direction the strike came from and whether the source of it was magical or not."
+					]
+			}
+			]
+		},
+		{
+		"name": "Lancer",
+		"source": "ÆLoB",
+		"page": 0,
+		"prerequisite": [
+		{
+			"ability": [
+				{
+					"str": 13
+				},
+				{
+					"dex": 13
+				},
+				{
+					"con": 13
+				}
+			]
+		}
+		],
+		"ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con"
+				],
+				"amount": 1
+			}
+		}
+		],
+		"entries": [
+			"You have mastered the usage of long polearms on horseback, thus:",
+			{
+				"type": "list",
+				"items": [
+					"If you are mounted on horseback you can use your action to couch any {@filter weapon|items|source=phb;dmg;xge;tce|property=reach} with the reach property, which deals piercing damage.",
+					"You can couch a weapon only as long as your displacement (which is a measure of how far you moved from your starting spoition) is equal or greter than 6m. within each turn you want to keep that status.",
+					"A couched weapon may hit multiple opponents if they are in a line within it's reach.",
+					"If you execute a melee attack with the couched weapon and you are profficient with it, you apply your profficiency bonus twice to the throw, which determines whether you manage to hit the target.",
+					"On hit, the strike(s) is a critical strike(s).",
+					"All hit creatures must suceed on a DC 8 + your strength/dexterity modifier (whichever was used for the attack) + your profficiency bonus (if it was applied to the attack) dexterity saving throw, on failure the target falls prone and is stunned for one turn."
+					]
+			}
+			]
+		},
+		{
+		"name": "Sanwë-Latyando",
+		"source": "ÆLoB",
+		"page": 0,
+		"prerequisite": [
+			{
+			"other": "Sum of str, dex and con modifiers lower than sum of int, wis and cha modifiers."
+			}
+		],
+		"ability": [
+		{
+			"choose": {
+				"from": [
+					"int",
+					"wis",
+					"cha"
+				],
+				"amount": 1
+			}
+		}
+		],
+		"entries": [
+			"You have mastered the forgotten art of thought-opening:",
+			{
+				"type": "list",
+				"items": [
+					"You can speak telepathically to any creature with which you are familiar or one which you can see, has intelligence higher than four and possesses a consciousness.",
+					"Your telepathic utterances are languageless and are as such understood by all recepients.",
+					"You can hear what the creature thinks (the creature is aweare of this).",
+					"Any creature can willingly close and reopen it's mind to such communication, blocking or opening all telepathic comunication, though they have to experience such communication in order to be able to do so.",
+					"You cannot communicate with deceased humans in this way. "
+					]
+			}
+			]
+		},
+		{
+		"name": "Beast Slayer",
+		"source": "ÆLoB",
+		"page": 0,
+		"prerequisite": [
+		{
+			"ability": [
+				{
+					"str": 13
+				}
+			]
+		}
+		],
+		"optionalfeatureProgression": [
+		{
+			"name": "Maneuvers",
+			"featureType": [
+				"MV:B"
+			],
+			"progression": {
+				"*": 1
+			}
+		}
+		],
+		"entries": [
+			"You have mastered the art of slaying great beasts of Melkor and as such:",
+			{
+				"type": "list",
+				"items": [
+					"You are immune to being {@condition frightened}.",
+					"You can use the {@action climb onto a bigger creature|dmg} action on an action. You have advantage on the check you make when trying to grapple the larger creature as a part of your action. The creature you climb unto has disadvantage on all checks it makes in order to throw you off of it.",
+					"Creatures at least one size larger than you have disadvantage when trying to grapple you.",
+					"You learn one {@filter maneuver|optionalfeatures|feature type=MV:B} of your choice from among those available to the {@class fighter|phb|Battle Master|Battle Master|phb|2-0} archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+					"You gain one superiority die, which is a {@dice d4} (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+					]
+			}
+			]
+		}
+],
+
+"item": [
+	{
+	"name": "Monstrous Greatsword",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "M",
+		"rarity": "none",
+		"weight": 8,
+		"value": 8000,
+		"weaponCategory": "martial",
+		"property": [
+			"ÆMH",
+			"2H"
+		],
+		"dmg1": "2d10",
+		"dmgType": "S",
+		"sword": true,
+		"weapon": true,
+		"entries": ["Monstrous greatswords, such as this one are utilised by the most elite of orc martial combatants."]
+	},
+	{
+		"name": "Monstrous Longbow",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "R",
+		"rarity": "none",
+		"weight": 6,
+		"value": 10000,
+		"weaponCategory": "martial",
+		"property": [
+			"A",
+			"ÆMH",
+			"2H"
+		],
+		"range": "150/600",
+		"dmg1": "2d10",
+		"dmgType": "P",
+		"bow": true,
+		"weapon": true,
+		"ammoType": "arrow|phb",
+		"entries": ["Monstrous longbows, such as this one are utilised by the most elite of orc ranged combatants."]
+	},
+	{
+	"name": "Applicator Dart",
+	"source": "ÆLoB",
+	"srd": false,
+	"basicRules": false,
+	"type": "R",
+	"rarity": "none",
+	"weight": 0.5,
+	"value": 5000,
+	"weaponCategory": "martial",
+	"property": [
+		"F",
+		"T"
+	],
+	"range": "20/60",
+	"dmg1": "1d4",
+	"dmgType": "P",
+	"weapon": true,
+	"entries": ["This dart has a built-in state-of-the-art mechanism, which utilises a piece of coiled metal under tension to increase the amount of poison delivered into the target's body. If poison is applied using this dart, the CR of all the saving throws against it is increased by 5, aditionally the poison takes 8 hours to lose potency while inside the dart's inner storeage."]
+	},
+	{
+		"name": "Monocle of Magic Detection",
+		"source": "ÆLoB",
+		"wondrous": true,
+		"rarity": "rare",
+		"reqAttune": "true",
+		"srd": false,
+		"basicRules": false,
+		"type": "R",
+		"rarity": "none",
+		"weight": 2,
+		"weaponCategory": "martial",
+		"entries": ["For the uninitiated this item appears to be a regular monocle. However when attuned to by a creature it highlights all the magic objects, creatures and auras. The color of the highlihts indicates the school of magic of the spell used to create the effect. If a creature attuned to it looks through the monocle and an effect created by a spell of 6-th or higher level is visible then the attuned creature must suceed on a DC 10 + spell's level Constitution saving throw or become {@condition blinded} for three turns (by the highliht's brightness)."]
+	},
+	{
+	"name": "Flying Scourge's Venom (vial)",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "G",
+		"rarity": "none",
+		"value": 15000,
+		"poison": true,
+		"entries": [
+			"This type of poison made from commonly found foul herbs is favoured by orcs, due to its high potency.",
+			"You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 15 Constitution saving throw or take {@damage 1d6} poison damage. Once applied, the poison retains potency for 1 minute before drying."
+		]
+	},
+	{
+	"name": "Orc Poison (vial)",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "G",
+		"rarity": "none",
+		"value": 15000,
+		"poison": true,
+		"entries": [
+			"This type of poison made from commonly found foul herbs is favoured by orcs, due to its high potency.",
+			"You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 15 Constitution saving throw or take {@damage 1d6} poison damage. Once applied, the poison retains potency for 1 minute before drying."
+		]
+	},
+	{
+	"name": "Septic Orc Poison (vial)",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "G",
+		"rarity": "none",
+		"value": 20000,
+		"poison": true,
+		"entries": [
+			"This type of poison made from the blood of fallen enemies and grog mixed in a skillful manner and preserved with herbs.",
+			"You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw, taking {@damage 2d6} poison damage and becoming poisoned for {@dice 1d4} hours, on a failed save and taking {@damage 1d6} poison damage on a successful one. Once applied, the poison retains potency for 1 minute before drying."
+		]
+	},
+	{
+	"name": "Vile Orc Poison (vial)",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "G",
+		"rarity": "none",
+		"value": 30000,
+		"poison": true,
+		"entries": [
+			"This type of poison made from a vile mixture of dirt, grog, rotten blood, vile herbs and poisonous berries. It requires unique skills to prepare.",
+			"You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 15 Constitution saving throw, taking {@damage 4d8} poison damage and becoming poisoned for {@dice 1d6} hours, on a failed save and taking {@damage 2d8} poison damage on a successful one. Once applied, the poison retains potency for 1 minute before drying."
+		]
+	},
+	{
+	"name": "Complex Orc Poison (vial)",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "G",
+		"rarity": "none",
+		"value": 100000,
+		"poison": true,
+		"entries": [
+			"This type of poison is a coctail of exotic poisonous plants. The recepie is a personal secret of the creator and is unguessable, even to the most skilled of alchemists.",
+			"You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 15 Constitution saving throw, taking {@damage 4d12} poison damage, becoming {@condition poisoned} for {@dice 1d20} hours and {@condition stunned} for {@dice 1d4} turns, on a failed save and taking {@damage 2d12} poison damage on a successful one. Once applied, the poison retains potency for 1 minute before drying."
+		]
+	},
+	{
+	"name": "Warg's Fang",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"weight": 2,
+		"type": "OTH",
+		"rarity": "none",
+		"value": 1000,
+		"entries": [
+			"Wargs' fangs are a prized trophy amongst all cultures and races."
+			]
+	},
+	{
+	"name": "Werewolf's Fang",
+		"source": "ÆLoB",
+		"srd": false,
+		"weight": 10,
+		"basicRules": false,
+		"type": "OTH",
+		"rarity": "none",
+		"value": 10000,
+		"entries": [
+			"Werewolves' fangs are a prized trophy amongst all cultures and races."
+			]
+	},
+	{
+	"name": "Werewolf's Rib Bones",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "OTH",
+		"rarity": "none",
+		"weight": 100,
+		"value": 50000,
+		"entries": [
+			"The greatest of werwewolf's bones may be used for decoration or as an armor addon."
+			]
+	},
+	{
+	"name": "Flying Scourge Trophy",
+		"source": "ÆLoB",
+		"srd": false,
+		"weight": 100,
+		"basicRules": false,
+		"type": "OTH",
+		"rarity": "none",
+		"value": 50000,
+		"entries": [
+			"An uncanny sight... ...is it me or is it still looking at you?"
+			]
+	},
+	{
+	"name": "Flying Scourgelet Trophy",
+		"source": "ÆLoB",
+		"srd": false,
+		"weight": 20,
+		"basicRules": false,
+		"type": "OTH",
+		"rarity": "none",
+		"value": 10000,
+		"entries": [
+			"Certainly an interesting trophy."
+			]
+	},
+	{
+	"name": "Flying Scourge's Blood (vial)",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "OTH",
+		"rarity": "none",
+		"value": 10000,
+		"entries": [
+			"A black, fuming liquid, which deals {@dice 1d4} poison damage per turn on contact and slowly vaporizes or eats through it's container if not sealed in a vial. A vial of this substance may be used to brew one dose of {@item Potion of Poison Resistance|DMG|potion of poison resistance.}"
+			]
+	},	
+	{
+	"name": "Warg Hide (1 sq. yd.)",
+		"source": "ÆLoB",
+		"srd": false,
+		"weight": 10,
+		"basicRules": false,
+		"type": "TG",
+		"rarity": "none",
+		"value": 5000,
+		"entries": []
+	},
+	{
+	"name": "Werewolf Hide (1 sq. yd.)",
+		"source": "ÆLoB",
+		"srd": false,
+		"weight": 20,
+		"basicRules": false,
+		"type": "TG",
+		"rarity": "none",
+		"value": 20000,
+		"entries": []
+	},
+	{
+	"name": "Orc Report",
+		"source": "ÆLoB",
+		"srd": false,
+		"basicRules": false,
+		"type": "OTH",
+		"rarity": "none",
+		"entries": [
+		"An Orc report (written in {@language Orc}) contains the name of the commander who issued it, the date of issuing and informations about the operations this orc's subordinates undertook on that day. In case the machinations remain unknown to the adventurers roll a d100 to determine the report's contents:",
+		{
+					"type": "table",
+					"caption": "Orc report contents",
+					"colLabels": [
+						"d100",
+						"Report contents"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"01-20",
+							"A shipment of supplies and weapons worth approximately 1000 gp. is due to arrive at the commander's main camp within {@dice 1d6} days. The place of origin of the convoy is given in the report."
+						],
+						[
+							"21-30",
+							"A messenger of Gorthaur will arrive to parle with the commander in {@dice 1d8} days."
+						],
+						[
+							"31-40",
+							"The commander has managed to capture a VIP prisoner and tortures him in a secret prison for information. The approximate location of impisonment is given. Form the report one can infer that the prisoner will survive aproximately {@dice 6d20} hours."
+						],
+						[
+							"41-50",
+							"During a recent raid the orcs have stolen and hidden a magic item. The item's current location is not given in the report. However it is known that it will be transfered to his superiors in {@dice 1d20} days."
+						],
+						[
+							"51-60",
+							"The commander has finished constructing a secret hideout guarded by elite troops, containing most of his treasure."
+						],
+						[
+							"61-70",
+							"The commander has found out that some of his most trusted suobritnates were corrupt spies. He will publically execute them in {@dice 3d4} days."
+						],
+						[
+							"71-80",
+							"The commander has managed to steal military plans of the forces of the free peoples. They will be transfered to his superiors in {@dice 2d4} hours via a skilled messenger."
+						],
+						[
+							"90-95",
+							"The commander has found a powerful magic scroll. It will be transfered to his superiors in {@dice 2d4} hours via a skilled messenger."
+						],
+						[
+							"95-100",
+							"The commander has wounded a mighty fell beast. The approximate location where the combat has taken place is given. However a mighty hunting party will set off to slay it in {@dice 2d6 hours}."
+						],
+						[
+							"100",
+							"The commander has found a rare magic item and has hidden it somewhere in his main camp."
+						]
+					]
+				}
+		]
+	}
+],
+
+"itemProperty": [
+	{
+	"abbreviation": "ÆMH",
+		"source": "ÆLoB",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "Monstrously Heavy",
+				"entries": [
+					"Creatures that are small or tiny are unable to use Monstrously Heavy weapons. They are simply to heavy for them to handle.",
+					"Medium creatures must have at least 20 strength, or have disadvantage on attack rolls with Monstrously Heavy weapons.",
+					"Creatures that are not profficient in a weapon that has this property require a seperate action to draw it."
+				]
+			}
+		]
+	}
+],
+
+"condition": [
+	{
+	"name": "Bleeding wound",
+		"entries": [
+			{
+				"type": "list",
+				"items": [
+					"The affected creature loses the amount of hp equal to it's hit dice value (for example 1d10 for a fighter) per each bleeding wound.",
+					"Any creature can expend it's action to stanch the wound with a successful DC 12 Wisdom (Medicine) check.",
+					"Any amount of magical healing closes all wounds."
+				]
+			}
+		],
+			"source": "ÆLoB"
+	}
+],
+
+"monster": [
+	{
+	"name": "Flying Scourge",
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "monstrosity",
+			"tags": [
+				{
+					"tag": "Beast",
+					"prefix": "Fell"
+				}
+			]
+		},
+		"source": "ÆLoB",
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"formula": "20d12 + 80",
+			"average": 210
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 30,
+			"fly": 100
+		},
+		"str": 15,
+		"dex": 20,
+		"con": 18,
+		"int": 8,
+		"wis": 16,
+		"cha": 7,
+		"passive": 23,
+		"cr": {
+			"cr": "11"
+		},
+		"fluff": {
+			"entries": [
+				[
+					{
+						"type": "entries",
+						"entries": [
+							"A Flying scourge resembles a serpentine creature adorned with large bat-like wings and black eagle-like talons. It's black hide, which covers the entirenty of it's body provides excellent camouflage in environments corrupted by the dark lord's power. It also retains ability to see and communicate using sound."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Fell Beasts",
+								"entries": [
+									"Fell Beasts are monstrosities created by Melkor. They oft resemble the noble beasts which were warped to create them, but are greater in power, strength and agility. These monstrosities had great influence on mannish culture as it was only recently that they traversed into Beleriand, where such abominations have been hunted to the brink of extinction. However with the coming of war and the ever spreading dark lord's influence and corruption of the land, the dreadful horrors are poised to return..."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"Enough {@item Flying Scourge's Blood (vial)|ÆLoB|flying scourge's blood} to fill twenty vials, enough {@item Flying Scourge's Venom (vial)|ÆLoB|flying scourge's venom} to fill five vials, a {@item Flying Scourge Trophy|ÆLoB|flying scourge trophy} after succeeding on a DC 10 Dexterity (sleight of hand) check (the extraction takes 4 hours)"
+								]
+							}
+						]
+					}
+				]
+			]
+
+		},
+		"shortName": true,
+		"senses": [
+			"blindsight 300 ft."
+		],
+		"senseTags": [
+			"B"
+		],
+		"save": {
+			"con": "+9",
+			"dex": "+10"
+		},
+		"skill": {
+			"acrobatics": "+15",
+			"intimidation": "+3",
+			"perception": "+13",
+			"survival": "+8",
+			"stealth": "+10"
+		},
+		"vulnerable": [
+			"radiant"
+		],
+		"resist": [
+			"acid",
+			"cold",
+			"fire",
+			"necrotic"
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"frightened",
+			"poisoned"
+		],
+		"environment": [
+			"arctic",
+			"corrupted terrain"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Flying scourge makes three attacks: one venomous bite and two attacks with it's talons."
+				]
+			},
+			{
+				"name": "Talon Strike",
+				"entries": [
+					"The Flying scourge utilises it's sharp talons to strike at the enemy. Melee Weapon Attack: {@hit 10} to hit, reach 1.5 m., one target. {@h}24 ({@damage 3d12 + 5}) slashing damage. If the target is a medium or smaller creature it must succeed on a {@dc 15} strength saving throw or be knocked {@condition prone}."
+				]
+			},
+			{
+				"name": "Talon Grip",
+				"entries": [
+					"The Flying scourge utilises it's sharp talons to grapple the enemy. Melee Weapon Attack: {@hit 10} to hit, reach 1.5 m., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage. If the target is a medium or smaller creature it is {@condition grappled} (escape {@dc 15}). The target makes a {@dc 18} dexterity saving throw or become {@condition restrained} while {@condition grappled}."
+				]
+			},
+			{
+				"name": "Venomous bite",
+				"entries": [
+					"The Flying scourge lashes out with it's neck and attacks with it's sharp hollow fangs. Melee Weapon Attack: {@hit 10} to hit, reach 3 m., one target. {@h}16 ({@dice 2d10 + 5}) piercing and 24 ({@damage 3d12 + 5}) poison damage. The target makes a {@dc 17} condition save. On success it only receives half the piercing damage. On critical failure (failure by 5 or more) it is paralysed until it finishes a long rest. If the target drops to 0 HP while {@condition poisoned} in this way it's stable and paralysed."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"damageTags": [
+			"I",
+			"P",
+			"S"
+		],
+		"bonus": [
+			{
+				"name": "Command scourgelets",
+				"entries": [
+					" As a bonus action the flying scourge can communicate with all {@creature flying scourgelet|ÆLoB|flying scourgelets} in a 30 m. radius and order them to attack, move or manoeuvre."
+				]
+			},
+			{
+				"name": "Noxious gas (Recharge 4-6).",
+				"entries": [
+					"As a bonus action the Flying scourge may spew forth a dense cloud of noxious gas in a 6mx6mx6m cube. All creatures with a condition modifier lower than 3 receive 2 ({@damage 1d4}) poison damage each turn while inside."
+				]
+			}
+		],
+		"trait": [
+			{
+				"name": "Agile",
+				"entries": [
+					"The speed of the Flying scourge is not hindered by difficult terrain."
+				]
+			},
+			{
+				"name": "Eagle eyed",
+				"entries": [
+					"When making an attack with advantage the fell beast can re-roll one {@dice d20}."
+				]
+			},
+			{
+				"name": "Foul smell",
+				"entries": [
+					"The smell of a Flying scourge is unbearable. All creatures within 9 m. of it must succeed on a {@dc 17} Constitution saving throw or be {@condition poisoned} for eight hours. On success the creature is immune to the effect for 8 hours."
+				]
+			},
+			{
+				"name": "Swift striker",
+				"entries": [
+					"The Flying scourge rolls initiative with advantage unless it was surprised."
+				]
+			}
+		]
+	},
+	{
+	"name": "Flying Scourgelet",
+		"size": [
+			"T"
+		],
+		"type": {
+			"type": "monstrosity",
+			"tags": [
+				{
+					"tag": "Beast",
+					"prefix": "Fell"
+				}
+			]
+		},
+		"source": "ÆLoB",
+		"alignment": [
+			"C",
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"formula": "2d6 + 2",
+			"average": 9
+		},
+		"speed": {
+			"walk": 5,
+			"climb": 5,
+			"fly": 30
+		},
+		"str": 8,
+		"dex": 14,
+		"con": 12,
+		"int": 6,
+		"wis": 12,
+		"cha": 7,
+		"passive": 13,
+		"cr": "1",
+		"fluff": {
+			"entries": [
+				[
+					{
+						"type": "entries",
+						"entries": [
+							"A Flying Scourgelet, while small and lacking in the noxiously poisonous ability of the adult specimens of the species, is not to be underestimated. In large groups their swift nature may enable them to overwhelm large creatures, even unexperianced adventurers."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Fell Beasts",
+								"entries": [
+									"Fell Beasts are monstrosities created by Melkor. They oft resemble the noble beasts which were warped to create them, but are greater in power, strength and agility. These monstrosities had great influence on mannish culture as it was only recently that they traversed into Beleriand, where such abominations have been hunted to the brink of extinction. However with the coming of war and the ever spreading dark lord's influence and corruption of the land, the dreadful horrors are poised to return..."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"Enough {@item Flying Scourge's Blood (vial)|ÆLoB|flying scourge's blood} to fill one vial, a {@item Flying Scourgele Trophy|ÆLoB|flying scourgelet trophy} after succeeding on a DC 10 Dexterity (sleight of hand) check (the extraction takes 1 minute)"
+								]
+							}
+						]
+					}
+				]
+			]
+
+		},
+		"shortName": true,
+		"senses": [
+			"blindsight 100 ft."
+		],
+		"senseTags": [
+			"B"
+		],
+		"save": {
+			"con": "+3",
+			"dex": "+4"
+		},
+		"skill": {
+			"acrobatics": "+6",
+			"perception": "+3",
+			"stealth": "+6",
+			"survival": "+3"
+		},
+		"vulnerable": [
+			"radiant"
+		],
+		"resist": [
+			"acid",
+			"cold",
+			"fire",
+			"necrotic",
+			"poison"
+		],
+		"immune": [],
+		"conditionImmune": [],
+		"environment": [
+			"arctic",
+			"corrupted terrain"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The flying scourgelet makes two attacks: one bite and one talon scratch."
+				]
+			},
+			{
+				"name": "Talon Scratch",
+				"entries": [
+					"The flying scourgelet utilises it's sharp talons to strike at the enemy. Melee Weapon Attack: {@hit 6} to hit, reach 1.5 m., one target. {@h}8 ({@damage 2d4 + 3}) slashing damage."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"The flying scourgelet lashes out with it's neck and attacks with it's sharp hollow fangs. Melee Weapon Attack: {@hit 6} to hit, reach 1.5 m., one target. {@h}5 ({@damage 1d4 + 2}) piercing damage."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"bonus": [
+			{
+				"name": "Manoeuvre",
+				"entries": [
+					"As a bonus action the scourgelet may take the disengage action."
+				]
+			}
+		],
+		"trait": [
+			{
+				"name": "Agile",
+				"entries": [
+					"The speed of the flying scourgelet is not hindered by difficult terrain."
+				]
+			}
+		],
+		"alias": [
+			"flying scourgelets"
+		]
+	},
+	{
+	"name": "Gorthaur's Werewolf",
+		"size": [
+			"L"
+		],
+		"type": {
+			"type": "monstrosity",
+			"tags": [
+				{
+					"tag": "Beast",
+					"prefix": "Fell"
+				}
+			]
+		},
+		"source": "ÆLoB",
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"formula": "20d6 + 60",
+			"average": 13
+		},
+		"speed": {
+			"walk": 60
+		},
+		"str": 20,
+		"dex": 19,
+		"con": 17,
+		"int": 10,
+		"wis": 14,
+		"cha": 7,
+		"passive": 18,
+		"cr": "7",
+		"shortName": true,
+		"save": {
+			"dex": "+7",
+			"str": "+8"
+		},
+		"vulnerable": [
+			"radiant"
+		],
+		"resist": [
+			{
+				"resist": [
+					"necrotic",
+					"poison"
+				]
+			},
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't silvered"
+			}
+		],
+		"conditionImmune": [
+			"frightened"
+		],
+		"environment": [
+			"corrupted terrain"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The werewolf makes three attacks: A tackle, a claw attack and either a bite attack or a grappling bite attack."
+				]
+			},
+			{
+				"name": "Tackle",
+				"entries": [
+					"{@atk mw} The werewolf jumps into a 2x2x2 cube to tackle opponent(s) of size medium or smaller. If the opponent is adjacent to the werewolf the attack roll is made with disadvantage. The attack has {@hit 7} to hit, and hits all creatures within a 2x2x2 cube. On hit the targets sustain 14 ({@damage 2d8 + 5}) bludgeoning damage. Additionally all hit targets must succeed on a {@dc 16} saving throw or fall {@condition prone}. Each targeted creature is shoved outside of the attacks area. The werewolf then moves into the area."
+				]
+			},
+			{
+				"name": "Slashing Claws",
+				"entries": [
+					"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) slashing damage. If the target is resistant to slashing damage it must succeed on a {@dc 15} constitution saving throw or not apply the resistance."
+				]
+			},
+			{
+				"name": "Ravenous bite",
+				"entries": [
+					"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) piercing damage. If the target is {@condition frightened} it must also succeed on a {@dc 17} wisdom saving throw or fall {@condition prone}."
+				]
+			},
+			{
+				"name": "Grappling bite",
+				"entries": [
+					"The werewolf attempts to grapple a medium (or smaller) creature and trap it within it's jaws. At the end of each of the Werewolf's turn while {@condition grappled} the creature takes 15 ({@dice 1d20 + 5}) piercing and 13 ({@damage 2d8 + 4}) bludgeoning damage at the end of each of werewolf's turn, is {@condition restrained} and must succeed on a {@dc 16} constitution saving throw or have one of it's bones fractured. If the creature drops to 0 HP while {@condition grappled} in this way it acquires one failure on death saving throws, is released from the grapple and cannot acquire more death saving throw failures until it's turn begins."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B",
+			"P",
+			"S"
+		],
+		"bonus": [
+			{
+				"name": "Dexterous leap",
+				"entries": [
+					"As a bonus action the werewolf may make a 20 feet long jump over medium (or smaller) creatures or other obstacles. If they are hostile they may use their reaction to make an opportunity attack, even if the werewolf doesn't exit their attack range."
+				]
+			}
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the werewolf can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Keen Hearing and Smell",
+				"entries": [
+					"The werewolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+				]
+			},
+			{
+				"name": "Shadow Stealth",
+				"entries": [
+					"While in dim light or darkness, the werewolf can take the {@action Hide} action as a bonus action."
+				]
+			},
+			{
+				"name": "Pack Tactics",
+				"entries": [
+					"The werewolf has advantage on an attack roll against a creature if at least one of the werewolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 200 ft."
+		],
+		"senseTags": [
+			"SD"
+		],
+		"skill": {
+			"athletics": "+11",
+			"intimidation": "+8",
+			"perception": "+8",
+			"stealth": "+10",
+			"survival": "+5"
+		},
+		"traitTags": [
+			"Aggressive",
+			"Keen Senses"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"languages": [
+			"Orc",
+			"Warg"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Unlike most werewolves, which serve in Melkor's army, Gorthaur's werewolves have been bred to fulfill the role usually reserved to wargs. They are giant athletic grapplers who ensure Sauron has to defeat his foes only once. In lesser battles they serve as the core of his dreadful army."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Fell Beasts",
+								"entries": [
+									"Fell Beasts are monstrosities created by Melkor. They oft resemble the noble beasts which were warped to create them, but are greater in power, strength and agility. These monstrosities had great influence on mannish culture as it was only recently that they traversed into Beleriand, where such abominations have been hunted to the brink of extinction. However with the coming of war and the ever spreading dark lord's influence and corruption of the land, the dreadful horrors are poised to return..."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Werewolves",
+								"entries": [
+									"From all the fell beasts the most notorious and dreaded amongst the common populace are the werevolves. Once noble great wolves, now corrupted by evil sorcery and posessed with even sinister spirits, they serve as elite troops in Melkor's army. Most werewolves serve under Gorthaur."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"{@dice 1d4} {@item Werewolf's Fang|ÆLoB|werewolf fangs}, {@dice 1d8} sq. yd. of {@item Werewolf Hide (1 sq. yd.)|ÆLoB|werewolf hide} (takes 1 hour per sq. yd. to skin), 1 set of {@item Werewolf's Rib Bones|ÆLoB|werewolf's rib bones} (takes 2 hours to extract)"
+								]
+							}
+						]
+					}
+				
+			]
+		}
+	},
+	{
+	"name": "Warg",
+		"size": [
+			"L"
+		],
+		"type": {
+			"type": "beast"
+		},
+		"source": "ÆLoB",
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"formula": "2d6 + 6",
+			"average": 13
+		},
+		"speed": {
+			"walk": 60
+		},
+		"str": 18,
+		"dex": 14,
+		"con": 16,
+		"int": 8,
+		"wis": 12,
+		"cha": 6,
+		"passive": 15,
+		"cr": "3",
+		"shortName": true,
+		"save": {
+			"dex": "+4",
+			"str": "+6"
+		},
+		"vulnerable": [
+			"radiant"
+		],
+		"resist": [],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The warg makes two attacks: one with its bite and one with its claws."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 1.5m ft., one target. {@h}14 ({@damage 3d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"P"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the warg can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Keen Hearing and Smell",
+				"entries": [
+					"The warg has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+				]
+			},
+			{
+				"name": "Shadow Stealth",
+				"entries": [
+					"While in dim light or darkness, the warg can take the {@action Hide} action as a bonus action."
+				]
+			},
+			{
+				"name": "Pack Tactics",
+				"entries": [
+					"The warg has advantage on an attack roll against a creature if at least one of the warg's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"skill": {
+			"stealth": "+4",
+			"perception": "+5"
+		},
+		"traitTags": [
+			"Aggressive",
+			"Keen Senses",
+			"Pack Tactics"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"fluff": {
+			"entries": [
+				""
+			]
+		},
+		"fluff": {
+			"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Wargs are large wolves posessed by evil spirits form the beyond. As such they are capable of speech (for which they use their own dreadful tongue) and human level of coordination. They usually hunt in packs or serve as scouts in Melkor's army. They are also utilised to chase after retreating enemies due to their superior speed and agility."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"2 {@item Warg's Fang|ÆLoB|warg's fangs}, 3 sq. yd. of {@item Warg Hide (1 sq. yd.)|ÆLoB|warg hide} (takes 1 hour per sq. yd. to skin)"
+								]
+							}
+						]
+					}
+			]
+		},
+		"languages": [
+			"Orc",
+			"Warg"
+		],
+		"languageTags": [
+			"O"
+		],
+		"environment": [
+			"corrupted terrain",
+			"forest",
+			"grassland",
+			"hill"
+		],
+		"conditionInflict": [
+			"prone"
+		]
+	},
+	{
+	"name": "Lower Snaga",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			9
+		],
+		"hp": {
+			"formula": "1d8 - 1",
+			"average": 3
+		},
+		"speed": {
+			"walk": 25
+		},
+		"str": 9,
+		"dex": 8,
+		"con": 9,
+		"int": 7,
+		"wis": 8,
+		"cha": 8,
+		"passive": 9,
+		"cr": "0",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"resist": [],
+		"damageTags": [
+			"B"
+		],
+		"trait": [
+			{
+				"name": "\"It's treason then...\"",
+				"entries": [
+					"This Orc will always ally with the side of the battle most likely to win."
+				]
+			},
+			{
+				"name": "Sunlight Weakness",
+				"entries": [
+					"While in sunlight, the snaga has disadvantage on attack rolls, ability checks, and saving throws."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"action": [
+			{
+				"name": "Unarmed Strike",
+				"entries": [
+					"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}1 bludgeoning damage."
+				]
+			}
+		],
+		"miscTags": [
+			"MW"
+		],
+		"fluff": {
+			"entries": [
+				[
+					{
+						"type": "entries",
+						"entries": [
+							"Lower snaga are orc-slaves who commited some kind of misconduct and have been designated to die. They are stripped of their belongings and sent to work while underfed in dangerous conditions."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Snaga",
+								"entries": [
+									"Snaga, which in orc means slave, is a term which refers to the lowest caste of orc society. Most of them commited some form of betrayal, such as retreating from a battle and were stripped of their belongings. They were often owned by other orcs and worked the most dangerous of jobs, such as feeding wargs, working the mines or forges of their masters."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"{@dice 1d4 - 1} {@item Copper (cp)|PHB|copper pieces}"
+								]
+							}
+						]
+					}
+				]
+			]
+
+		}
+	},
+	{
+	"name": "Well-off Snaga",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"formula": "3d8 + 3",
+			"average": 16
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 12,
+		"dex": 10,
+		"con": 12,
+		"int": 9,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"cr": "1/8",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"resist": [],
+		"damageTags": [
+			"P"
+		],
+		"trait": [
+			{
+				"name": "Sunlight Weakness",
+				"entries": [
+					"While in sunlight, the snaga has disadvantage on attack rolls, ability checks, and saving throws."
+				]
+			},
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the snaga can move up to its speed toward a hostile creature that it can see."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+				[
+					{
+						"type": "entries",
+						"entries": [
+							"This snaga has managed to acquire a weapon and a healthy dose of food."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Snaga",
+								"entries": [
+									"Snaga, which in orc means slave, is a term which refers to the lowest caste of orc society. Most of them commited some form of betrayal, such as retreating from a battle and were stripped of their belongings. They were often owned by other orcs and worked the most dangerous of jobs, such as feeding wargs, working the mines or forges of their masters."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Dagger|PHB|dagger}, {@dice 1d8} {@item Copper (cp)|PHB|copper pieces}"
+								]
+							}
+						]
+					}
+				]
+			]
+
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d4 + 3}) piercing damage."
+				]
+			}
+		],
+		"miscTags": [
+			"RW",
+			"MW",
+			"THW"
+		]
+	},
+	{
+	"name": "Snaga Slaver",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"{@item hide armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"formula": "8d8 + 16",
+			"average": 52
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 16,
+		"dex": 10,
+		"con": 14,
+		"int": 8,
+		"wis": 8,
+		"cha": 12,
+		"passive": 9,
+		"cr": "1/2",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"resist": [],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"trait": [
+			{
+				"name": "Sunlight Weakness",
+				"entries": [
+					"While in sunlight, the snaga has disadvantage on attack rolls, ability checks, and saving throws."
+				]
+			},
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the slaver can move up to its speed toward a hostile creature that it can see."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+				[
+					{
+						"type": "entries",
+						"entries": [
+							"This orc due to his lack of martial ability and great cruelty has been designated a slave overseer. The overseers use their whips to keep all of their subordinates at a combortable range."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Snaga",
+								"entries": [
+									"Snaga, which in orc means slave, is a term which refers to the lowest caste of orc society. Most of them commited some form of betrayal, such as retreating from a battle and were stripped of their belongings. They were often owned by other orcs and worked the most dangerous of jobs, such as feeding wargs, working the mines or forges of their masters."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Dagger|PHB|dagger}, 1 {@item Whip|PHB|whip}, {@dice 1d6} {@item Silver (sp)|PHB|silver pieces}"
+								]
+							}
+						]
+					}
+
+				]
+			]
+
+		},
+
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+				]
+			},
+			{
+				"name": "Whip",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
+				]
+			}
+		],
+		"miscTags": [
+			"RW",
+			"MW",
+			"THW",
+			"RCH"
+		],
+		"skill": {
+			"intimidation": "+3"
+		}
+	},
+	{
+	"name": "Orc Warrior",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"{@item hide armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"formula": "10d8 + 20",
+			"average": 65
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 16,
+		"dex": 11,
+		"con": 14,
+		"int": 8,
+		"wis": 9,
+		"cha": 10,
+		"passive": 9,
+		"cr": "1",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"trait": [
+			{
+				"name": "Sunlight Weakness",
+				"entries": [
+					"While in sunlight, the snaga has disadvantage on attack rolls, ability checks, and saving throws."
+				]
+			},
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the orc warrior can move up to its speed toward a hostile creature that it can see."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Orcs such as this one are the most commonly deployed units in already conquered territories. They serve as simple guardsmen and perform other duties such as establishing watchtowers and supressing resistance where required."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Shortsword|PHB|shortsword}, {@dice 1d8} {@item Silver (sp)|PHB|silver pieces}"
+								]
+							}
+						]
+					}
+			]
+
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Orc makes two melee attacks."
+				]
+			},
+			{
+				"name": "Shortsword",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 3}) piercing damage."
+				]
+			}
+		],
+		"miscTags": [
+			"MW"
+		],
+		"skill": {
+			"intimidation": "+5"
+		},
+		"actionTags": [
+			"Multiattack"
+		]
+	},
+	{
+	"name": "Orc Soldier",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"{@item scale mail|phb}",
+					"{@item shield|phb}"
+				],
+				"braces": true
+			}
+		],
+		"hp": {
+			"formula": "10d8 + 20",
+			"average": 65
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 16,
+		"dex": 12,
+		"con": 15,
+		"int": 8,
+		"wis": 9,
+		"cha": 10,
+		"passive": 9,
+		"cr": "2",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"damageTags": [
+			"P"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the orc soldier can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Sunlight Sensitivity",
+				"entries": [
+					"While in sunlight, the Orc soldier has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"The backbone cannon fodder of the Dark Lord's army. This orcs mass produced equipment is of such poor quality that it cannot by properly utilised by adventurers and no reputable merchant will buy it for more than a few silver pieces."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Spear|PHB|spear}, {@dice 1d10} {@item Silver (sp)|PHB|silver pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+			]
+
+		},
+		"traitTags": [
+			"Aggressive",
+			"Sunlight Sensitivity"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Orc makes two melee attacks."
+				]
+			},
+			{
+				"name": "Spear",
+				"entries": [
+					"{@atk mw,rw} {@hit +5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+				]
+			}
+		],
+		"miscTags": [
+			"RW",
+			"MW",
+			"THW"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"skill": {
+			"intimidation": "+5"
+		}
+	},
+	{
+	"name": "Orc Swordsman",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"{@item half plate armor|phb}"
+				],
+				"braces": true
+			}
+		],
+		"hp": {
+			"formula": "15d8 + 45",
+			"average": 112
+		},
+		"speed": {
+			"walk": 35
+		},
+		"str": 18,
+		"dex": 14,
+		"con": 16,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"cr": "5",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"damageTags": [
+			"S"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the orc swordsman can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Menacing Attack {@recharge 5}",
+				"entries": [
+					"When the swordsman hits the creature with a weapon attack, he can attempt to frighten the target. The attack's damage increases by {@dice 1d8}, and the target must make a {@dc 15} Wisdom saving throw. On a failed save, it is {@condition frightened} of the swordsman until the end of his next turn."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"This orc has attained great proficiency with the greatsword. While his armor is still of poor quality, the sword looks dreadfully dangerous."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Greatsword|PHB|greatsword}, 20 lb. of {@item Iron|PHB|iron} (metal scraps),  {@dice 1d20} {@item Gold (gp)|PHB|gold pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+			]
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Orc makes two melee attacks."
+				]
+			},
+			{
+				"name": "Greatsword",
+				"entries": [
+					"{@atk mw} {@hit +7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+				]
+			}
+		],
+		"miscTags": [
+			"MW"
+		],
+		"actionTags": [
+			"Multiattack",
+			"Parry"
+		],
+		"skill": {
+			"intimidation": "+7",
+			"athletics": "+7"
+		},
+		"save": {
+			"str": "+7",
+			"con": "+6"
+		},
+		"reaction": [
+			{
+				"name": "Parry {@recharge 4}",
+				"entries": [
+					"When another creature damages the swordsman with a melee attack, he can expend his reaction to reduce the damage by {@dice 1d8 + 3}."
+				]
+			}
+		],
+		"bonus": [
+			{
+				"name": "Overpower",
+				"entries": [
+					"The swordsman may use his bonus action to make the {@action shove} action."
+				]
+			}
+		]
+	},
+	{
+	"name": "Veteran Orc Swordsman",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"{@item half plate armor|phb}"
+				],
+				"braces": true
+			}
+		],
+		"hp": {
+			"formula": "18d8 + 72",
+			"average": 153
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 19,
+		"dex": 16,
+		"con": 18,
+		"int": 11,
+		"wis": 12,
+		"cha": 12,
+		"passive": 11,
+		"cr": "7",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"damageTags": [
+			"S"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the orc swordsman can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Menacing Attack {@recharge 4}",
+				"entries": [
+					"When the swordsman hits the creature with a weapon attack, he can attempt to frighten the target. The attack's damage increases by {@dice 1d10}, and the target must make a {@dc 15} Wisdom saving throw. On a failed save, it is {@condition frightened} of the swordsman until the end of his next turn."
+				]
+			},
+			{
+				"name": "Precision Attack {@recharge 5}",
+				"entries": [
+					"When the swordsman makes a weapon attack roll against a creature, he adds a {@dice d10} to the roll. He can use this trait before or after making the attack roll, but before any effects of the attack are applied."
+				]
+			},
+			{
+				"name": "Action surge {@recharge}",
+				"entries": [
+					"On his turn the swordsman may use this ability to take one additional action."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+				[
+					{
+						"type": "entries",
+						"entries": [
+							"This swordsman is close to reaching a pinnacle of mastery with his blade, which has chipped in a fortunate way, allowing this skilled warrior to deliver even more gruesome wounds."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Greatsword|PHB|greatsword}, 25 lb. of {@item Iron|PHB|iron} (metal scraps), {@dice 4d12} {@item Gold (gp)|PHB|gold pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+
+				]
+			]
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Orc makes three melee attacks."
+				]
+			},
+			{
+				"name": "Clumsly serrated great sword",
+				"entries": [
+					"{@atk mw} {@hit +7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage."
+				]
+			},
+			{
+				"name": "Whirlwind Attack {@recharge}",
+				"entries": [
+					"The swordsman makes a melee attack against all creatures of his choice that are within 5 feet of him, with a separate attack roll for each target."
+				]
+			}
+		],
+		"miscTags": [
+			"MW"
+		],
+		"actionTags": [
+			"Multiattack",
+			"Parry"
+		],
+		"skill": {
+			"intimidation": "+10",
+			"athletics": "+10",
+			"acrobatics": "+6"
+		},
+		"save": {
+			"str": "+7",
+			"con": "+7"
+		},
+		"reaction": [
+			{
+				"name": "Parry",
+				"entries": [
+					"When another creature damages the swordsman with a melee attack, he can expend his reaction to reduce the damage by {@dice 1d10 + 3}."
+				]
+			}
+		],
+		"bonus": [
+			{
+				"name": "Overpower",
+				"entries": [
+					"The swordsman may use his bonus action to make the {@action shove} action."
+				]
+			}
+		]
+	},
+	{
+	"name": "Orc Martial Captain",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"{@item plate armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"formula": "22d8 + 88",
+			"average": 187
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 20,
+		"dex": 17,
+		"con": 18,
+		"int": 16,
+		"wis": 14,
+		"cha": 14,
+		"passive": 12,
+		"cr": "9",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"damageTags": [
+			"S"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the captain can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Menacing Attack {@recharge 4}",
+				"entries": [
+					"When the captain hits the creature with a weapon attack, he can attempt to frighten the target. The attack's damage increases by {@dice 1d12}, and the target must make a {@dc 17} Wisdom saving throw. On a failed save, it is {@condition frightened} of the captain until the end of his next turn."
+				]
+			},
+			{
+				"name": "Precision Attack {@recharge 4}",
+				"entries": [
+					"When the captain makes a weapon attack roll against a creature, he adds a {@dice d12} to the roll. He can use this trait before or after making the attack roll, but before any effects of the attack are applied."
+				]
+			},
+			{
+				"name": "Action surge {@recharge 5}",
+				"entries": [
+					"On his turn the captain may use this ability to take one additional action."
+				]
+			},
+			{
+				"name": "Commander's Strike {@recharge 5}",
+				"entries": [
+					"When the captain takes the Attack action on his turn, he can forgo one of his attacks and use a bonus action to direct one of his allies to strike. That creature can immediately use its reaction to make one weapon attack, adding {@dice 1d12} to the attack's damage roll."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc",
+			"Sindar"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+				[
+					{
+						"type": "entries",
+						"entries": [
+							"These captains are masters of the balde. Equipped with the best armors orc slave-forges can manufacture, they wield mighty weapons of their own design: the greatest a mortal could possibly bear."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Orc captains",
+								"entries": [
+									"Since hierarchy in orcish society is written in blood and treachery, those who stand the highest are fierce and cunning opponents. Orc captain is a title, which refers to the commanders of groups of thousands to tens of thousands of individuals. They are often accompanied by lower-ranking captains and chieftains, whom they personally select as to ensure an acceptable level of loyalty."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Melkor's army structure",
+								"entries": [
+									"While all of the dark lord's forces ultimately answer to him, it would be impossible to keep contorl of milions of indiviuals by himself only, thus he employs a host of powerful commanders to aid him in his conquests. The highest-ranking commander, besides Melkor is Gorthaur, lord of dread and werewolves, who assmumes command of all forces when Melkor cannot perform his duties. To them answer the seven Balrogs, who comand Great Armies, which can reach up to a few milion individuals in size. Then there are the orc-captains of the Hosts, who command Hosts of tens of thousands of individuals, as well as smaller Armies, Legions, Great Companies and Companies. Lastly there are the chieftains who are rarely appointed and rise to power as a result of asserting dominance in oft brutal and barbaric ways: these command Bands and Troops of orcs no greater than a few hundered individuals in size."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Monstrous Greatsword|ÆLoB|monstrous greatsword}, 1 {@item Dagger|PHB|dagger}, {@dice 1d4 - 1} days of {@item Orc Report|ÆLoB|report}, 40 lb. of {@item Iron|PHB|iron} (metal scraps), {@dice 20d20} {@item Gold (gp)|PHB|gold pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+				]
+			]
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Orc makes four melee attacks."
+				]
+			},
+			{
+				"name": "Monstrous sword",
+				"entries": [
+					"{@atk mw} {@hit +9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage."
+				]
+			},
+			{
+				"name": "Greater whirlwind Attack {@recharge 5}",
+				"entries": [
+					"The captain makes a melee attack against all creatures of his choice that are within 10 feet of him, with a separate attack roll for each target."
+				]
+			}
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"actionTags": [
+			"Multiattack",
+			"Parry"
+		],
+		"skill": {
+			"intimidation": "+13",
+			"athletics": "+13",
+			"acrobatics": "+7",
+			"history": "+7",
+			"survival": "+6",
+			"performance": "+6",
+			"insight": "+6"
+		},
+		"save": {
+			"str": "+9",
+			"con": "+8"
+		},
+		"reaction": [
+			{
+				"name": "Parry",
+				"entries": [
+					"When another creature damages the captain with a melee attack, he can expend his reaction to reduce the damage by {@dice 1d12 + 3}."
+				]
+			}
+		],
+		"bonus": [
+			{
+				"name": "Overpower",
+				"entries": [
+					"The captain may use his bonus action to make the {@action shove} action."
+				]
+			},
+			{
+				"name": "Cunning action",
+				"entries": [
+					"The captain may use his bonus action to take the {@action dash}, {@action disengage} or {@action hide} action."
+				]
+			}
+		],
+		"resist": [
+			"poison"
+		]
+	},
+	{
+	"name": "Orc Bowman",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item studded leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"formula": "10d8 + 20",
+			"average": 65
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 16,
+		"dex": 17,
+		"con": 15,
+		"int": 9,
+		"wis": 10,
+		"cha": 8,
+		"passive": 10,
+		"cr": "2",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the bowman can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Sunlight Sensitivity",
+				"entries": [
+					"While in sunlight, the Orc bowman has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"This orc is one of the so-called orc \"bowmen\". Their shortbows look more like sticks with shoelaces than a serious weapon. However, their use of poisons to enhance the weapon's damage is not to be underestimated."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Shortbow|PHB|shortbow}, 1 {@item Dagger|PHB|dagger}, {@dice 1d4} vials of {@item Orc Poison (vial)|ÆLoB|poison}, {@dice 1d20} {@item Arrow|PHB|arrows}, {@dice 1d12} {@item Silver (sp)|PHB|silver pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+			]
+
+		},
+		"traitTags": [
+			"Aggressive",
+			"Sunlight Sensitivity"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Orc makes two attacks."
+				]
+			},
+			{
+				"name": "Shortbow",
+				"entries": [
+					"{@atk rw} {@hit +5} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 3 ({@damage 1d6}) poison damage on a failed save."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit +5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 3 ({@damage 1d6}) poison damage on a failed save."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"miscTags": [
+			"RW",
+			"RNG",
+			"MW",
+			"THW"
+		],
+		"skill": {
+			"stealth": "+5"
+		},
+		"save": {
+			"dex": "+5",
+			"con": "+4"
+		}
+	},
+	{
+	"name": "Orc Archer",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"{@item studded leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"formula": "15d8 + 45",
+			"average": 112
+		},
+		"speed": {
+			"walk": 35
+		},
+		"str": 18,
+		"dex": 18,
+		"con": 16,
+		"int": 9,
+		"wis": 12,
+		"cha": 8,
+		"passive": 11,
+		"cr": "6",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"damageTags": [
+			"P"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the archer can move up to its speed toward a hostile creature that it can see."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+				"Orc archers, while being quite a rare sight are formidable opponents, being able to make swift attacks which poison their opponents."
+			]
+		},
+		"fluff": {
+			"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"This orc has attained great proficiency with the greatsword. While his armor is still of poor quality, the sword looks dreadfully dangerous."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Longbow|PHB|longbow}, 1 {@item Dagger|PHB|dagger}, {@dice 1d4} vials of {@item Septic Orc Poison (vial)|ÆLoB|poison}, 2 lb. of {@item Iron|PHB|iron} (metal scraps), {@dice 2d12} {@item Gold (gp)|PHB|gold pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+			]
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Orc makes two attacks."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit +7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage, and the target must make a {@dc 10} Constitution saving throw, taking {@damage 2d6} poison damage and becoming {@condition poisoned} for {@dice 1d4} hours, on a failed save and taking {@damage 1d6} poison damage on a successful one."
+				]
+			},
+			{
+				"name": "Longbow",
+				"entries": [
+					"{@atk rw} {@hit +9} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, and the target must make a {@dc 10} Constitution saving throw, taking {@damage 2d6} poison damage and becoming {@condition poisoned} for {@dice 1d4} hours, on a failed save and taking {@damage 1d6} poison damage on a successful one."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"miscTags": [
+			"RW",
+			"MW",
+			"THW",
+			"RNG"
+		],
+		"skill": {
+			"stealth": "+7",
+			"acrobatics": "+7"
+		},
+		"save": {
+			"dex": "+7",
+			"con": "+6"
+		},
+		"bonus": [
+			{
+				"name": "Swiftly aimed shot",
+				"entries": [
+					"As a bonus action, the archer can fire a clumsil aimed shot at one enemy with his bow. The attack bonus for this attack is only {@hit +7}."
+				]
+			}
+		]
+	},
+	{
+	"name": "Veteran Orc Archer",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"{@item studded leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"formula": "15d8 + 60",
+			"average": 127
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 19,
+		"dex": 19,
+		"con": 18,
+		"int": 10,
+		"wis": 14,
+		"cha": 8,
+		"passive": 15,
+		"cr": "8",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"damageTags": [
+			"P"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the archer can move up to its speed toward a hostile creature that it can see."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+				[
+					{
+						"type": "entries",
+						"entries": [
+							"This orc has managed to surivie a formidable time given how (un)cleverly most orc commanders utilise archers. His longbow has some obscure modifications, which allow him to compensate for his injuries in combat."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Longbow|PHB|longbow}, 1 {@item Dagger|PHB|dagger}, {@dice 1d4} vials of {@item Vile Orc Poison (vial)|ÆLoB|poison}, 2 lb. of {@item Iron|PHB|iron} (metal scraps), {@dice 4d12} {@item Gold (gp)|PHB|gold pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+
+				]
+			]
+
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Orc makes three attacks."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit +7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking {@damage 4d8} poison damage and becoming {@condition poisoned} for {@dice 1d6} hours, on a failed save and taking {@damage 2d8} poison damage on a successful one."
+				]
+			},
+			{
+				"name": "Accustomed longbow",
+				"entries": [
+					"{@atk rw} {@hit +9} to hit, range 150/600 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking {@damage 4d8} poison damage and becoming {@condition poisoned} for {@dice 1d6} hours, on a failed save and taking {@damage 2d8} poison damage on a successful one."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"miscTags": [
+			"RW",
+			"MW",
+			"THW",
+			"RNG"
+		],
+		"skill": {
+			"stealth": "+10",
+			"acrobatics": "+10",
+			"survival": "+5",
+			"perception": "+5"
+		},
+		"save": {
+			"dex": "+7",
+			"con": "+7"
+		},
+		"bonus": [
+			{
+				"name": "Swiftly aimed shot",
+				"entries": [
+					"As a bonus action, the archer can fire a clumsily aimed shot at one enemy with his bow. The attack bonus for this attack is only {@hit +6}."
+				]
+			},
+			{
+				"name": "Run away",
+				"entries": [
+					"As a bonus action, the archer can take the {@action disengage} action."
+				]
+			}
+		]
+	},
+	{
+	"name": "Orc Ranged Captain",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"{@item studded leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"formula": "18d8 + 72",
+			"average": 153
+		},
+		"speed": {
+			"walk": 45
+		},
+		"str": 20,
+		"dex": 20,
+		"con": 18,
+		"int": 16,
+		"wis": 14,
+		"cha": 14,
+		"passive": 20,
+		"cr": "10",
+		"shortName": true,
+		"vulnerable": [
+			"radiant"
+		],
+		"damageTags": [
+			"P"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the captain can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Commander's Strike {@recharge 5}",
+				"entries": [
+					"When the captain takes the Attack action on his turn, he can forgo one of his attacks and use a bonus action to direct one of his allies to strike. That creature can immediately use its reaction to make one weapon attack, adding {@dice 1d12} to the attack's damage roll."
+				]
+			}
+		],
+		"damageTagsLegendary": [
+			"B"
+		],
+		"senses": [
+			"darkvision 90 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc",
+			"Sindar"
+		],
+		"languageTags": [
+			"O"
+		],
+		"fluff": {
+			"entries": [
+				[
+					{
+						"type": "entries",
+						"entries": [
+							"These captains are masters of the bow. Equipped with enormous longbows and an array of deadly poisons they leave all of their opponents shivering in pain."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Orc captains",
+								"entries": [
+									"Since hierarchy in orcish society is written in blood and treachery, those who stand the highest are fierce and cunning opponents. Orc captain is a title, which refers to the commanders of groups of thousands to tens of thousands of individuals. They are often accompanied by lower-ranking captains and chieftains, whom they personally select as to ensure an acceptable level of loyalty."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Melkor's army structure",
+								"entries": [
+									"While all of the dark lord's forces ultimately answer to him, it would be impossible to keep contorl of milions of indiviuals by himself only, thus he employs a host of powerful commanders to aid him in his conquests. The highest-ranking commander, besides Melkor is Gorthaur, lord of dread and werewolves, who assmumes command of all forces when Melkor cannot perform his duties. To them answer the seven Balrogs, who comand Great Armies, which can reach up to a few milion individuals in size. Then there are the orc-captains of the Hosts, who command Hosts of tens of thousands of individuals, as well as smaller Armies, Legions, Great Companies and Companies. Lastly there are the chieftains who are rarely appointed and rise to power as a result of asserting dominance in oft brutal and barbaric ways: these command Bands and Troops of orcs no greater than a few hundered individuals in size."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Monstrous Longbow|ÆLoB|monstrous longbow}, 1 {@item Dagger|PHB|dagger}, {@dice 1d4 - 1} days of {@item Orc Report|ÆLoB|report}, {@dice 1d4 - 1} {@item Applicator Dart|ÆLoB|applicator darts}, {@dice 1d4} vials of {@item Complex Orc Poison (vial)|ÆLoB|poison}, 2 lb. of {@item Iron|PHB|iron} (metal scraps), {@dice 20d20} {@item Gold (gp)|PHB|gold pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+				]
+			]
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The captain makes three attacks."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit +9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking {@damage 4d8} poison damage and becoming {@condition poisoned} for {@dice 1d6} hours, on a failed save and taking {@damage 2d8} poison damage on a successful one."
+				]
+			},
+			{
+				"name": "Monstrous Longbow",
+				"entries": [
+					"{@atk rw} {@hit +11} to hit, range 150/600 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking {@damage 4d8} poison damage and becoming {@condition poisoned} for {@dice 1d6} hours, on a failed save and taking {@damage 2d8} poison damage on a successful one."
+				]
+			},
+			{
+				"name": "Applicator dart",
+				"entries": [
+					"{@atk rw} {@hit +11} to hit, range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage, and the target must make a {@dc 20} Constitution saving throw, taking {@damage 4d12} poison damage, becoming {@condition poisoned} for {@dice 1d20} hours and {@condition stunned} for {@dice 1d4} turns, on a failed save and taking {@damage 2d12} poison damage on a successful one. The commander has only three applicator darts, which he refills each long rest."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"miscTags": [
+			"RW",
+			"MW",
+			"THW",
+			"RNG"
+		],
+		"skill": {
+			"stealth": "+13",
+			"acrobatics": "+13",
+			"survival": "+10",
+			"perception": "+10",
+			"animal handling": "+6",
+			"sleight of hand": "+9",
+			"performance": "+6",
+			"intimidation": "+6"
+		},
+		"save": {
+			"dex": "+9",
+			"con": "+8"
+		},
+		"bonus": [
+			{
+				"name": "Swiftly aimed shot",
+				"entries": [
+					"As a bonus action, the captain can fire a clumsily aimed shot at one enemy with his bow. The attack bonus for this attack is only {@hit +7}."
+				]
+			},
+			{
+				"name": "Run away",
+				"entries": [
+					"As a bonus action, the captain can take the {@action disengage} action."
+				]
+			}
+		],
+		"resist": [
+			"poison"
+		]
+	},
+	{
+	"name": "Orc Pikeman",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"{@item half plate armor|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"formula": "15d8 + 45",
+			"average": 112
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 18,
+		"dex": 14,
+		"con": 16,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"cr": "4",
+		"shortName": true,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"skill": {
+			"athletics": "+6"
+		},
+		"save": {
+			"str": "+6",
+			"con": "+5"
+		},
+		"vulnerable": [
+			"radiant"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the pikeman can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Formation fighter",
+				"entries": [
+					"This orc is one of the few who had been trained to fight in defensive formations. If at least one another ally with this trait, who is not {@condition incapacitated} is present within 5 feet of this orc, the orc gains +5 to AC."
+				]
+			}
+		],
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The pikeman makes two attacks."
+				]
+			},
+			{
+				"name": "Pike",
+				"entries": [
+					"{@atk mw} {@hit +6} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+				]
+			}
+		],
+		"fluff": {
+			"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"This orc has been trained to fight in formation along with other pikemen to make the best use of their weapons' extensive range."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Pike|PHB|pike}, 20 lb. of {@item Iron|PHB|iron} (metal scraps),  {@dice 1d4} {@item Gold (gp)|PHB|gold pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+			]
+		},
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"actionTags": [
+			"Multiattack"
+		]
+	},
+	{
+	"name": "Veteran Orc Pikeman",
+		"size": [
+			"M"
+		],
+		"type": "humanoid",
+		"source": "ÆLoB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"{@item half plate armor|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"formula": "18d8 + 72",
+			"average": 153
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 18,
+		"dex": 14,
+		"con": 18,
+		"int": 10,
+		"wis": 10,
+		"cha": 12,
+		"passive": 10,
+		"cr": "6",
+		"shortName": true,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"senseTags": [
+			"D"
+		],
+		"languages": [
+			"Orc"
+		],
+		"languageTags": [
+			"O"
+		],
+		"skill": {
+			"athletics": "+7",
+			"intimidation": "+7"
+		},
+		"save": {
+			"str": "+7",
+			"con": "+7"
+		},
+		"vulnerable": [
+			"radiant"
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the pikeman can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Formation fighter",
+				"entries": [
+					"This orc is one of the few who had been trained to fight in defensive formations. If at least one another ally with this trait, who is not {@condition incapacitated} is present within 5 feet of this orc, the orc gains +5 to AC."
+				]
+			},
+			{
+				"name": "Lunging Attack {@recharge 4}",
+				"entries": [
+					"The pikeman can increase the reach of his attack by 5 feet. If the attack hits it's damage is increased by {@dice 1d10}."
+				]
+			}
+		],
+		"fluff": {
+			"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Somehow, this orc survived long enough as a front-line soldier to be considered a veteran."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loot",
+								"entries": [
+									"1 {@item Pike|PHB|pike}, 20 lb. of {@item Iron|PHB|iron} (metal scraps),  {@dice 3d12} {@item Gold (gp)|PHB|gold pieces}, {@dice 1d4} {@item Rations (1 day)|PHB|rations}"
+								]
+							}
+						]
+					}
+			]
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The pikeman makes three attacks."
+				]
+			},
+			{
+				"name": "Pike",
+				"entries": [
+					"{@atk mw} {@hit +7} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage, and the target must make a {@dc 15} constitution saving throw. On failure it acquires a bleeding wound."
+				]
+			}
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"actionTags": [
+			"Multiattack"
+		]
+	}
+],
+
+"adventure": [
+		{
+			"name": "Æfinwe's Lays of Beleriand",
+			"id": "ÆLoB",
+			"source": "ÆLoB",
+			"group": "homebrew",
+			"contents": [
+				{
+					"name": "Appendix A - Maps"
+				}
+			]
+		}
+],
+"adventureData": [
+		{
+			"id": "ÆLoB",
+			"source": "ÆLoB",
+			"data": [
+				{
+					"type": "section",
+					"name": "Appendix A - Maps",
+					"page": 1,
+						"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/Dat-guy-test/img/main/Mapa%20N.png"
+							},
+							"title": ""
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/Dat-guy-test/img/main/Mapa%20S.png"
+							},
+							"title": ""
+						}
+						]
+				}
+			]
+		}
+]
+
+}
